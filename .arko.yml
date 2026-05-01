@@ -1,0 +1,18 @@
+# ARKO scan configuration (demo placeholder — adjust when ARKO ships repo-level config)
+version: 1
+project:
+  name: arko-demo-bank
+  languages:
+    - typescript
+    - javascript
+    - python
+    - go
+    - hcl
+exclude_paths:
+  - "**/node_modules/**"
+  - "**/.venv/**"
+  - "**/dist/**"
+  - "**/build/**"
+tags:
+  - demo
+  - intentionally-vulnerable

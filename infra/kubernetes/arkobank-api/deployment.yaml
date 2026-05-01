@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: arkobank-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: arkobank-api
+  template:
+    metadata:
+      labels:
+        app: arkobank-api
+    spec:
+      containers:
+        - name: api
+          image: arkobank/api:demo
+          ports:
+            - containerPort: 8080
+          env:
+            - name: DATABASE_URL
+              value: postgresql://batch:synthetic@postgres:5432/arkobank

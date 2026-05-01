@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      ARKOBANK_CI_TOKEN: ghp_FAKE_DEMO_CI_TOKEN_DO_NOT_USE
+      AWS_ACCESS_KEY_ID: AKIAIOSFODNN7EXAMPLE
+      AWS_SECRET_ACCESS_KEY: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install frontend deps
+        working-directory: packages/frontend
+        run: npm install
+      - name: Build frontend
+        working-directory: packages/frontend
+        run: npm run build
+      - name: Install payments deps
+        working-directory: packages/payments-service
+        run: npm install
+      - name: Compile payments service
+        working-directory: packages/payments-service
+        run: npm run build

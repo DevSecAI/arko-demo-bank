@@ -1,0 +1,25 @@
+{
+  "name": "@arkobank/payments-service",
+  "private": true,
+  "version": "0.1.0-demo",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "axios": "0.21.1",
+    "express": "4.17.1",
+    "jsonwebtoken": "8.5.1",
+    "lodash": "4.17.19",
+    "minimist": "1.2.5",
+    "mysql2": "2.3.3",
+    "uuid": "9.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/node": "^20.11.16",
+    "typescript": "^5.3.3"
+  }
+}
