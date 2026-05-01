@@ -86,10 +86,8 @@ may not yet appear in ARKO output — useful for roadmap prioritisation.
 
 ## Publishing on GitHub
 
-Target organisation in the brief is **`Arko-DevSecAI-Prod`**. This checkout was built
-under a local workspace; **confirm whether you want the public repo under that org or a
-personal account** before the first push. After you run an ARKO scan, paste the summary
-into `docs/SCAN_RESULTS.md` and attach it to your PR description.
+Canonical remote: **[DevSecAI/arko-demo-bank](https://github.com/DevSecAI/arko-demo-bank)** on GitHub.
+After you run an ARKO scan, paste the summary into `docs/SCAN_RESULTS.md` and attach it to your PR description.
 
 ## Trademark notice
 
