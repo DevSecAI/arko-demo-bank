@@ -1,4 +1,4 @@
-module github.com/arko-devsecai-prod/arko-demo-bank/mobile-gateway
+module github.com/DevSecAI/arko-demo-bank/mobile-gateway
 
 go 1.21
 
