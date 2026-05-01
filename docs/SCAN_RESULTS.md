@@ -29,3 +29,5 @@ CISO would see.
 ## Notes
 
 - Link screenshot(s) or attach HTML/PDF report paths here.
+
+<!-- PR metadata: replace after ARKO scan -->
