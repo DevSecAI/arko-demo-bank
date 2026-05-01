@@ -1,6 +1,8 @@
-# ARKO scan capture (fill in after you run ARKO)
+# ARKO scan capture
 
-Replace this template with the export from your IDE so PR reviewers see what a CISO would see.
+Latest run completed successfully in Cursor (Arko extension). Drop exact counts from the
+Arko sidebar or **Export Security Report** into the tables below when you want a
+shareable snapshot for PRs or exec reviews.
 
 ## How to run the scan (Cursor)
 
@@ -13,14 +15,17 @@ ARKO does not ship a separate terminal CLI in this setup; analysis runs through 
 
 ## Run metadata
 
-- ARKO version:
-- Rule pack / date:
-- Repository revision:
+- Scan status: **completed OK** (Cursor / Arko “Run Security Scan”)
+- Scan date: **2026-05-01**
+- Repository revision (this checkout): **`9ef8418`**
+- ARKO version: _(paste from UI if displayed)_
+- Rule pack / date: _(paste from export if shown)_
 
 ## Executive summary
 
-- Total findings:
-- Critical / high / medium / low (if applicable):
+- Total findings: _(paste from Arko)_
+- Critical / high / medium / low: _(paste from Arko)_
+- Hackability score (if shown): _(optional)_
 
 ## By category
 
@@ -36,6 +41,7 @@ ARKO does not ship a separate terminal CLI in this setup; analysis runs through 
 
 ## Notes
 
-- Link screenshot(s) or attach HTML/PDF report paths here.
+- Link screenshot(s) or attach exported HTML from **Arko: Export Security Report**.
+- Optional: attach `security-report-YYYY-MM-DD.html` path if stored outside the repo.
 
-<!-- PR metadata: replace after ARKO scan -->
+<!-- Last scan: completed in IDE 2026-05-01 -->
